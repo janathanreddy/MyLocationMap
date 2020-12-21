@@ -172,7 +172,7 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
 
         let renderer = MKPolylineRenderer(overlay: overlay)
 
-        renderer.strokeColor = UIColor(red: 17.0/255.0, green: 147.0/255.0, blue: 255.0/255.0, alpha: 1)
+        renderer.strokeColor = UIColor.systemGray3
 
         renderer.lineWidth = 5.0
 
