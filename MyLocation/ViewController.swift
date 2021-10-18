@@ -21,6 +21,10 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
         checkLocationServices()
     }
     
+    //Made bugs fixes
+    
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -36,6 +40,10 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
             MyMapKitView.setRegion(region, animated: true)
         }
     }
+    
+    
+    
+    //functionality changes not needed
     
     func checkLocationServices() {
         if CLLocationManager.locationServicesEnabled() {
