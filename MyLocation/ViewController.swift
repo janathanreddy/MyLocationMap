@@ -20,9 +20,7 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
         super.viewDidLoad()
         checkLocationServices()
     }
-    
-    //Made bugs fixes
-    
+    //location access granted ,check it
     
     
     override func viewDidAppear(_ animated: Bool) {
@@ -31,6 +29,7 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
     }
     func setupLocationManager() {
         locationManager.delegate = self
+        
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
     
@@ -43,8 +42,9 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
     
     
     
-    //functionality changes not needed
     
+    
+  
     func checkLocationServices() {
         if CLLocationManager.locationServicesEnabled() {
             setupLocationManager()
@@ -53,6 +53,9 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
             print("Show alert letting the user know they have to turn this on.")
         }
     }
+    
+    
+    
     
     func checkLocationAuthorization() {
         switch CLLocationManager.authorizationStatus() {
