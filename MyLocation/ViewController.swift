@@ -15,7 +15,7 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
     var SourceLocation:CLLocationCoordinate2D?
     let locationManager = CLLocationManager()
     let regionInMeters: Double = 10000
-
+//asdasdasdasdasd
     override func viewDidLoad() {
         super.viewDidLoad()
         checkLocationServices()
@@ -29,7 +29,7 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
-    
+  //asdasdasdasdasdasd
     func centerViewOnUserLocation() {
         if let location = locationManager.location?.coordinate {
             let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
@@ -45,7 +45,7 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
             print("Show alert letting the user know they have to turn this on.")
         }
     }
-    
+  //asdasdasdasdasdasdasda
     func checkLocationAuthorization() {
         switch CLLocationManager.authorizationStatus() {
         case .authorizedWhenInUse:
@@ -70,6 +70,10 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
         present(searchController, animated: true, completion: nil)
 
     }
+    
+    //aSTahshagSVHAGvsavSVAhgsvahgSVGHA
+    
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar)
     {
         UIApplication.shared.beginIgnoringInteractionEvents()
