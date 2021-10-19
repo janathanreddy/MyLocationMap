@@ -22,7 +22,7 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
     }
     //location access granted ,check it
     
-    
+    //dsfdsfdsf
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -39,9 +39,7 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
             MyMapKitView.setRegion(region, animated: true)
         }
     }
-    
-    
-    
+
     
     
   
@@ -54,9 +52,7 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
         }
     }
     
-    
-    
-    
+
     func checkLocationAuthorization() {
         switch CLLocationManager.authorizationStatus() {
         case .authorizedWhenInUse:
