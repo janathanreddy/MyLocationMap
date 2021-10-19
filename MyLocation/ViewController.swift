@@ -40,7 +40,11 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
         }
     }
 
-  
+  //asaSAsaS
+    
+    
+    
+    
     func checkLocationServices() {
         if CLLocationManager.locationServicesEnabled() {
             setupLocationManager()
