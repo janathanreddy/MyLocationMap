@@ -10,7 +10,6 @@ import MapKit
 import CoreLocation
 
 class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate {
-
     @IBOutlet weak var MyMapKitView: MKMapView!
     var SourceLocation:CLLocationCoordinate2D?
     let locationManager = CLLocationManager()
