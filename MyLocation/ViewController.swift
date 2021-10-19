@@ -19,10 +19,10 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         checkLocationServices()
+        //viewdidload
     }
-    //location access granted ,check it
-    
-    //dsfdsfdsf
+   
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -40,8 +40,6 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
         }
     }
 
-    
-    
   
     func checkLocationServices() {
         if CLLocationManager.locationServicesEnabled() {
@@ -51,8 +49,10 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
             print("Show alert letting the user know they have to turn this on.")
         }
     }
-    
 
+    
+    
+    
     func checkLocationAuthorization() {
         switch CLLocationManager.authorizationStatus() {
         case .authorizedWhenInUse:
@@ -70,6 +70,10 @@ class ViewController: UIViewController,  UISearchBarDelegate, MKMapViewDelegate 
             break
         }
     }
+    
+    
+    
+    
     
     @IBAction func SearchAction(_ sender: Any) {
         let searchController = UISearchController(searchResultsController: nil)
